@@ -5,7 +5,7 @@
 staticfiles/
 __pycache__
 db.sqlite3
-
+tmp/
 # Backup files # 
 *.bak
 .vscode/
