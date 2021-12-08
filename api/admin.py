@@ -4,3 +4,4 @@ from .models import *
 admin.site.register(state)
 admin.site.register(city)
 admin.site.register(Country)
+admin.site.register(cityLocations)
