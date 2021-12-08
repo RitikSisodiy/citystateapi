@@ -61,7 +61,7 @@ class city(models.Model):
         super(Country, self).save(*args, **kwargs)
 class cityLocations(models.Model):
     city = models.ForeignKey(city,on_delete=models.CASCADE)
-    location = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
     pincode = models.IntegerField(blank=True,null=True)
     communitiny = models.CharField(max_length=100,blank=True)
     latitude = models.DecimalField(max_digits=10,decimal_places=8,blank=True)

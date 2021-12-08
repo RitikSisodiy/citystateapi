@@ -5,4 +5,5 @@ urlpatterns = [
     path('state/',views.stateView,name='state'),
     path('city/',views.cityView,name='city'),
     path('country/',views.countryView,name='country'),
+    path('locations/',views.locationsView,name='location'),
 ]
