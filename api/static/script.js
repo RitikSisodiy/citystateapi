@@ -32,6 +32,7 @@ $(document).ready(function () {
     pinselect.focusout( async function(){
         data = await makerequest(locationsurl,`?pincode=${this.value}&pagesize=1&data=id,city_id`,pinselect,responce=true)
         if (data.length>0){
+            setMaplocation(locationsurl,data[0].id)
             cityid = await data[0].city_id
             statedata = await makerequest(cityurl,`?id=${cityid}`,pinselect,responce=true)
             stateid = statedata[0].state_id
