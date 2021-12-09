@@ -21,7 +21,7 @@ def filtermodel(data,sample,resfieldcsv,modelname):
     arg =resfieldcsv.split(',') if resfieldcsv is not None else []
     print(data)
     print(arg)
-    return modelname.objects.filter(**data).order_by('name')[:pagesize].values(*arg)
+    return modelname.objects.filter(**data).order_by('name')[:int(pagesize)].values(*arg)
 
 
 def stateView(request):
