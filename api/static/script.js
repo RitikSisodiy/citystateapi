@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    url = "http://api.cyberflax.tk/"
+    url = "/"
     stateurl = `${url}api/state/`
     countryurl = `${url}api/country/`
     cityurl = `${url}api/city/`
