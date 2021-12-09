@@ -3,6 +3,10 @@ from django.http.response import HttpResponse, JsonResponse
 from django.shortcuts import render
 from .models import Country, city, cityLocations, state
 # Create your views here.
+def index(request):
+    return render(request,"index.html")
+
+
 def filtermodel(data,sample,resfieldcsv,modelname):
     if sample is not None:
         country = modelname.objects.values()[0]
